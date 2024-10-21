@@ -1,0 +1,27 @@
+{
+  "id": "eRob driver/create-a-blog-post",
+  "title": "Create a Blog Post",
+  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "source": "@site/docs/eRob driver/create-a-blog-post.md",
+  "sourceDirName": "eRob driver",
+  "slug": "/eRob driver/create-a-blog-post",
+  "permalink": "/docs/eRob driver/create-a-blog-post",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/eRob driver/create-a-blog-post.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "TwinCAT3-driver",
+    "permalink": "/docs/eRob driver/TwinCAT3-driver"
+  },
+  "next": {
+    "title": "Markdown Features",
+    "permalink": "/docs/eRob driver/markdown-features"
+  }
+}

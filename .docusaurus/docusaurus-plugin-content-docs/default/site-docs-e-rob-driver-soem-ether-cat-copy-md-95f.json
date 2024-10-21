@@ -1,0 +1,27 @@
+{
+  "id": "eRob driver/SOEM EtherCAT copy",
+  "title": "SOEM (Windows)",
+  "description": "---",
+  "source": "@site/docs/eRob driver/SOEM EtherCAT copy.md",
+  "sourceDirName": "eRob driver",
+  "slug": "/eRob driver/SOEM EtherCAT copy",
+  "permalink": "/docs/eRob driver/SOEM EtherCAT copy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/eRob driver/SOEM EtherCAT copy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using Python to Connect to TwinCAT",
+    "permalink": "/docs/eRob driver/python-driver"
+  },
+  "next": {
+    "title": "SOEM (Windows)",
+    "permalink": "/docs/eRob driver/SOEM EtherCAT"
+  }
+}

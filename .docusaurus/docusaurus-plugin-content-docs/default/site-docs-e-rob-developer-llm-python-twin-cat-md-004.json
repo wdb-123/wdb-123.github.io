@@ -1,0 +1,27 @@
+{
+  "id": "eRob_developer/LLM-python-TwinCAT",
+  "title": "Chat with eRob",
+  "description": "---",
+  "source": "@site/docs/eRob_developer/LLM-python-TwinCAT.md",
+  "sourceDirName": "eRob_developer",
+  "slug": "/eRob_developer/LLM-python-TwinCAT",
+  "permalink": "/docs/eRob_developer/LLM-python-TwinCAT",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/eRob_developer/LLM-python-TwinCAT.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Create a Document",
+    "permalink": "/docs/eRob_developer/create-a-document"
+  },
+  "next": {
+    "title": "Markdown Features",
+    "permalink": "/docs/eRob_developer/markdown-features"
+  }
+}

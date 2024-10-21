@@ -1,0 +1,27 @@
+{
+  "id": "eRob_developer/create-a-document",
+  "title": "Create a Document",
+  "description": "Documents are groups of pages connected through:",
+  "source": "@site/docs/eRob_developer/create-a-document.md",
+  "sourceDirName": "eRob_developer",
+  "slug": "/eRob_developer/create-a-document",
+  "permalink": "/docs/eRob_developer/create-a-document",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/eRob_developer/create-a-document.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nvidia Isaac Sim",
+    "permalink": "/docs/eRob_developer/Nvidia-Isaac-sim"
+  },
+  "next": {
+    "title": "Chat with eRob",
+    "permalink": "/docs/eRob_developer/LLM-python-TwinCAT"
+  }
+}
