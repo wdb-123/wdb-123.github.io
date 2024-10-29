@@ -18,9 +18,7 @@ This installation process can refer to the installation guide provideed on [Beck
 
 :::tip
 If you need to develop **using C++, please note the following**:
-
-1. The installation order should be: first install Visual Studio 20xx; and then install TwinCAT3.
-2. During the installation and usage, make sure to disable all antivirus software and system firewall.
+- The installation order should be: first install Visual Studio; and then install TwinCAT3.
 :::
 
 

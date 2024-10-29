@@ -65,10 +65,10 @@ make menuconfig
 
 After entering the graphical configuration interface, perform the following operations:
 
-- General Setup -> Preemption Model 设置为 Fully Preemptible Kernel(RT)
-- General Setup -> Timers subsystem -> Timer tick handling 设置为 Full dynticks system
-- General Setup -> Timers subsystem 开启 High Resolution Timer Support
-- Processor type and features -> Timer frequency 设置为 1000 HZ
+- General Setup -> Preemption Model -> Fully Preemptible Kernel(RT)
+- General Setup -> Timers subsystem -> Timer tick handling -> Full dynticks system
+- General Setup -> Timers subsystem -> High Resolution Timer Support
+- Processor type and features -> Timer frequency -> 1000 HZ
 
 **Remember to save and exit.**
 
