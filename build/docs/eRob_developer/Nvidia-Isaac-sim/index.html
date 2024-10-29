@@ -5,13 +5,239 @@
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">Nvidia Isaac Sim | eRob Lab</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://eroblabcom.godaddysites.com/img/robot1.png"><meta data-rh="true" name="twitter:image" content="https://eroblabcom.godaddysites.com/img/robot1.png"><meta data-rh="true" property="og:url" content="https://eroblabcom.godaddysites.com/docs/eRob_developer/Nvidia-Isaac-sim"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Nvidia Isaac Sim | eRob Lab"><meta data-rh="true" name="description" content="---"><meta data-rh="true" property="og:description" content="---"><link data-rh="true" rel="icon" href="/img/zeroerr-logo.png"><link data-rh="true" rel="canonical" href="https://eroblabcom.godaddysites.com/docs/eRob_developer/Nvidia-Isaac-sim"><link data-rh="true" rel="alternate" href="https://eroblabcom.godaddysites.com/docs/eRob_developer/Nvidia-Isaac-sim" hreflang="en"><link data-rh="true" rel="alternate" href="https://eroblabcom.godaddysites.com/docs/eRob_developer/Nvidia-Isaac-sim" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="eRob Lab RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="eRob Lab Atom Feed"><link rel="stylesheet" href="/assets/css/styles.185a8180.css">
-<script src="/assets/js/runtime~main.dfdc24c7.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.0fb6cd5c.js" defer="defer"></script>
 <script src="/assets/js/main.2425d8e8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/zeroerr-logo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/zeroerr-logo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">ZeroErr</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">eRob Lab</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Welcome to eRob Lab</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/erob-drivers">eRob Drivers</a><button aria-label="Expand sidebar category &#x27;eRob Drivers&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/erob-developer">eRob developer</a><button aria-label="Collapse sidebar category &#x27;eRob developer&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/eRob_developer/Nvidia-Isaac-sim">Nvidia Isaac Sim</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/eRob_developer/ROS2-moveIt">Deploy your site</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/eRob_developer/LLM-python-TwinCAT">Chat with eRob</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/chat-with-erob">Chat with eRob</a><button aria-label="Expand sidebar category &#x27;Chat with eRob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/erob-developer"><span itemprop="name">eRob developer</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Nvidia Isaac Sim</span><meta itemprop="position" content="2"></li></ul></nav><div class="theme-doc-markdown markdown"><header><h1>Nvidia Isaac Sim</h1></header>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/zeroerr-logo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/zeroerr-logo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">ZeroErr</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">eRob Lab</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Welcome to eRob Lab</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/erob-drivers">eRob Drivers</a><button aria-label="Expand sidebar category &#x27;eRob Drivers&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/erob-developer">eRob developer</a><button aria-label="Collapse sidebar category &#x27;eRob developer&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/eRob_developer/Nvidia-Isaac-sim">Nvidia Isaac Sim</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/eRob_developer/ROS2-moveIt">MoveIt2</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/eRob_developer/LLM-python-TwinCAT">Chat with eRob</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/chat-with-erob">Chat with eRob</a><button aria-label="Expand sidebar category &#x27;Chat with eRob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/erob-developer"><span itemprop="name">eRob developer</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Nvidia Isaac Sim</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Nvidia Isaac Sim</h1></header>
 <hr>
-<h1>Installation</h1>
-<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/eRob_developer/Nvidia-Isaac-sim.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/category/erob-developer"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">eRob developer</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/eRob_developer/ROS2-moveIt"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Deploy your site</div></a></nav></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+<h1>Installation in Windows</h1>
+<hr>
+<h1>1. Introduction to Isaac Sim</h1>
+<p>Although we provided a brief introduction to Isaac Sim in previous notes, we will discuss it again here (primarily translating the introduction from the official documentation).</p>
+<p>NVIDIA Omniverse Isaac Sim is a robotics simulation toolkit designed for the NVIDIA Omniverse platform. Isaac Sim boasts numerous key features tailored for building virtual robotic worlds and conducting experiments. It provides researchers and professionals with tools and workflows to create robust, high-precision physical simulations and synthetic datasets. Additionally, Isaac Sim supports other applications such as navigation and control through ROS/ROS2. Isaac Sim can simulate data from sensors like RGB-D cameras, LiDAR, and IMU, and it provides ground truth data. Below is the running interface of Isaac Sim.</p>
+<div class="IsaacSim"><a><img src="/img/IsaacSim1.png" alt="IsaacSim1" style="width:auto;height:500"></a></div>
+<hr>
+<p>#2.Isaac Sim System Architecture
+The system architecture of Isaac Sim is illustrated in the diagram below. As you can see, Isaac Sim supports the import of various models and environment files. USD files can be naturally opened directly (since the entire Omniverse is developed based on USD), while other file types, such as Onshape files, URDF (ROS) files, and MJCF files, are converted by their respective Importers.</p>
+<p>Isaac Sim is built upon Omniverse Kit, and then Isaac Sim itself is developed on top of it. There are different modes tailored for various environments. For example:</p>
+<p>Local Desktop Environment: This is the most common mode of Isaac Sim, suitable for standard desktop setups.
+Headless Mode: Designed for network environments and remote control scenarios. Headless mode refers to systems that lack display devices, keyboards, or mice. In many cases, servers operate in Headless mode and are controlled via remote connections.
+In addition to these modes, there are numerous Extensions built on top of Isaac Sim that provide various functionalities, such as:</p>
+<ul>
+<li>ROS Bridge Extension: Enables interaction with ROS/ROS2, facilitating navigation, control, and other applications.
+Synthetic Data Recorder Extension: Allows for the saving of synthetic datasets, which is invaluable for training and testing machine learning models.
+Moreover, Isaac Sim can simulate data from sensors like RGB-D cameras, LiDAR, and IMU, and it provides ground truth data for accurate simulation results. Below is an example of Isaac Sim&#x27;s running interface:</li>
+</ul>
+<div class="IsaacSim"><a><img src="/img/IsaacSim2.png" alt="IsaacSim2" style="width:auto;height:500"></a></div>
+<h1>2. System Requirements</h1>
+<p>Before proceeding, ensure your system meets the following minimum and recommended requirements for running Isaac Sim smoothly.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Minimum Requirements:</p><ul>
+<li>Operating System: Windows 10 64-bit</li>
+<li>CPU: Quad-core Intel or AMD processor, 2.5 GHz or faster</li>
+<li>Memory: 16 GB RAM</li>
+<li>Graphics: NVIDIA GPU with at least 6 GB VRAM (e.g., NVIDIA GTX 1060)</li>
+<li>Storage: 50 GB available space</li>
+<li>Software:</li>
+<li>Python 3.10</li>
+<li>Docker Desktop (optional, for containerized deployments)</li>
+<li>Recommended Requirements:<br>
+<!-- -->-- Operating System: Windows 10 Pro or Enterprise 64-bit<br>
+<!-- -->-- CPU: 8-core Intel or AMD processor, 3.0 GHz or faster<br>
+<!-- -->-- Memory: 32 GB RAM or more<br>
+<!-- -->-- Graphics: NVIDIA RTX series GPU with 8 GB VRAM or higher (for better performance and ray tracing)<br>
+<!-- -->-- Storage: SSD with 100 GB available space</li>
+<li>Software:<br>
+<!-- -->-- Latest NVIDIA drivers<br>
+<!-- -->-- Docker Desktop with WSL 2 backend (if using containerized deployments)</li>
+</ul></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-prerequisites-installation">2. Prerequisites Installation<a href="#2-prerequisites-installation" class="hash-link" aria-label="Direct link to 2. Prerequisites Installation" title="Direct link to 2. Prerequisites Installation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-update-nvidia-gpu-drivers">2.1. Update NVIDIA GPU Drivers<a href="#21-update-nvidia-gpu-drivers" class="hash-link" aria-label="Direct link to 2.1. Update NVIDIA GPU Drivers" title="Direct link to 2.1. Update NVIDIA GPU Drivers">​</a></h3>
+<p>Ensure your NVIDIA GPU drivers are up to date to support the latest features and optimizations.</p>
+<p>Download Latest Drivers:</p>
+<p>Visit the NVIDIA Driver Downloads page.
+Select your GPU model and download the latest driver.
+Install Drivers:</p>
+<p>Run the downloaded installer.
+Follow the on-screen instructions to complete the installation.
+Reboot your system if prompted.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-install-python">2.2. Install Python<a href="#22-install-python" class="hash-link" aria-label="Direct link to 2.2. Install Python" title="Direct link to 2.2. Install Python">​</a></h3>
+<p>Isaac Sim requires Python for scripting and extensions.</p>
+<ul>
+<li>Download Python:</li>
+</ul>
+<p>Visit the Python Downloads page.
+Download the latest Python 3.10 or later installer.</p>
+<ul>
+<li>
+<p>Install Python:</p>
+</li>
+<li>
+<p>Run the installer.
+Important: Check the box &quot;Add Python to PATH&quot;.
+Choose &quot;Customize installation&quot; if you need specific features, otherwise proceed with the default settings.
+Click &quot;Install Now&quot; and follow the prompts.
+Verify Installation:</p>
+</li>
+</ul>
+<p>bash
+Copy code
+python --version
+2.3. Install Git
+Git is required for version control and managing repositories.</p>
+<p>Download Git:</p>
+<p>Visit the Git for Windows page.
+Download the latest installer.
+Install Git:</p>
+<p>Run the installer.
+Follow the on-screen instructions, choosing default settings unless specific configurations are needed.
+Verify Installation:</p>
+<p>bash
+Copy code
+git --version
+2.4. (Optional) Install Docker Desktop
+For containerized deployments, Docker Desktop can be beneficial.</p>
+<p>Download Docker Desktop:</p>
+<p>Visit the Docker Desktop for Windows page.
+Download the installer.
+Install Docker Desktop:</p>
+<p>Run the installer.
+Follow the installation prompts.
+Enable WSL 2 backend during installation if prompted.
+Verify Installation:</p>
+<p>bash
+Copy code
+docker --version</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-create-an-nvidia-omniverse-account">3. Create an NVIDIA Omniverse Account<a href="#3-create-an-nvidia-omniverse-account" class="hash-link" aria-label="Direct link to 3. Create an NVIDIA Omniverse Account" title="Direct link to 3. Create an NVIDIA Omniverse Account">​</a></h2>
+<p>Isaac Sim is distributed via NVIDIA Omniverse. You need an Omniverse account to access and install it.</p>
+<p>Sign Up:</p>
+<p>Visit the NVIDIA Omniverse website.
+Click on &quot;Sign Up&quot; and follow the registration process.
+Verify your email address if required.
+Log In:</p>
+<p>After creating an account, log in to access the Omniverse Launcher.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-install-nvidia-omniverse-launcher">4. Install NVIDIA Omniverse Launcher<a href="#4-install-nvidia-omniverse-launcher" class="hash-link" aria-label="Direct link to 4. Install NVIDIA Omniverse Launcher" title="Direct link to 4. Install NVIDIA Omniverse Launcher">​</a></h2>
+<p>The Omniverse Launcher manages the installation and updates of Omniverse applications, including Isaac Sim.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="41-download-omniverse-launcher">4.1. Download Omniverse Launcher<a href="#41-download-omniverse-launcher" class="hash-link" aria-label="Direct link to 4.1. Download Omniverse Launcher" title="Direct link to 4.1. Download Omniverse Launcher">​</a></h3>
+<p>Visit the Omniverse Download Page:</p>
+<p>Go to the Omniverse Download page.
+Download the Launcher:</p>
+<p>Click on &quot;Download Omniverse Launcher&quot;.
+Save the installer (installer.exe) to a preferred location.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="42-install-omniverse-launcher">4.2. Install Omniverse Launcher<a href="#42-install-omniverse-launcher" class="hash-link" aria-label="Direct link to 4.2. Install Omniverse Launcher" title="Direct link to 4.2. Install Omniverse Launcher">​</a></h3>
+<p>Run the Installer:</p>
+<p>Double-click the downloaded installer.exe file.
+Follow the on-screen instructions to install the Omniverse Launcher.
+Note: The launcher will install in the default directory unless specified otherwise.
+Launch the Omniverse Launcher:</p>
+<p>After installation, run the Omniverse Launcher.
+Log In using your NVIDIA Omniverse account credentials.
+Update the Launcher (If Prompted):</p>
+<p>Ensure you have the latest version of the launcher by allowing any updates.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-install-isaac-sim-via-omniverse-launcher">5. Install Isaac Sim via Omniverse Launcher<a href="#5-install-isaac-sim-via-omniverse-launcher" class="hash-link" aria-label="Direct link to 5. Install Isaac Sim via Omniverse Launcher" title="Direct link to 5. Install Isaac Sim via Omniverse Launcher">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="51-navigate-to-isaac-sim">5.1. Navigate to Isaac Sim<a href="#51-navigate-to-isaac-sim" class="hash-link" aria-label="Direct link to 5.1. Navigate to Isaac Sim" title="Direct link to 5.1. Navigate to Isaac Sim">​</a></h3>
+<p>Open Omniverse Launcher:</p>
+<p>Ensure you are logged in.
+Find Isaac Sim:</p>
+<p>In the launcher, navigate to the &quot;Exchange&quot; or &quot;Install&quot; tab.
+Use the search bar to locate &quot;Isaac Sim&quot;.
+Select Isaac Sim:</p>
+<p>Click on &quot;Isaac Sim&quot; to view its details.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="52-install-isaac-sim">5.2. Install Isaac Sim<a href="#52-install-isaac-sim" class="hash-link" aria-label="Direct link to 5.2. Install Isaac Sim" title="Direct link to 5.2. Install Isaac Sim">​</a></h3>
+<p>Check System Requirements:</p>
+<p>Confirm that your system meets the necessary requirements as outlined above.
+Start Installation:</p>
+<p>Click the &quot;Install&quot; button.
+Choose the installation directory if prompted, or proceed with the default path.
+Monitor Installation:</p>
+<p>The launcher will download and install Isaac Sim along with any necessary dependencies.
+This process may take some time depending on your internet speed and system performance.
+Completion:</p>
+<p>Once installed, the &quot;Install&quot; button may change to &quot;Launch&quot;, indicating readiness.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-configure-environment-variables-if-necessary">6. Configure Environment Variables (If Necessary)<a href="#6-configure-environment-variables-if-necessary" class="hash-link" aria-label="Direct link to 6. Configure Environment Variables (If Necessary)" title="Direct link to 6. Configure Environment Variables (If Necessary)">​</a></h2>
+<p>Typically, the Omniverse Launcher handles environment configurations. However, if you encounter issues, setting environment variables manually can help.</p>
+<p>Open Environment Variables Settings:</p>
+<p>Right-click on &quot;This PC&quot; &gt; &quot;Properties&quot; &gt; &quot;Advanced system settings&quot;.
+Click on &quot;Environment Variables...&quot;.
+Add Necessary Variables:</p>
+<p>OMNIVERSE_HOME:
+Variable name: OMNIVERSE_HOME
+Variable value: Path to Omniverse installation, e.g., C:\Program Files\NVIDIA Corporation\Omniverse<br>
+<!-- -->PATH:
+Ensure that the Omniverse binaries are included in your system PATH.
+Example: C:\Program Files\NVIDIA Corporation\Omniverse\launcher<br>
+<!-- -->Apply Changes:</p>
+<p>Click &quot;OK&quot; to save changes.
+Restart your computer to apply the new environment variables.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-launch-and-verify-isaac-sim">7. Launch and Verify Isaac Sim<a href="#7-launch-and-verify-isaac-sim" class="hash-link" aria-label="Direct link to 7. Launch and Verify Isaac Sim" title="Direct link to 7. Launch and Verify Isaac Sim">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="71-launch-isaac-sim">7.1. Launch Isaac Sim<a href="#71-launch-isaac-sim" class="hash-link" aria-label="Direct link to 7.1. Launch Isaac Sim" title="Direct link to 7.1. Launch Isaac Sim">​</a></h3>
+<p>Open Omniverse Launcher:</p>
+<p>Navigate to the &quot;Installed&quot; tab.
+Start Isaac Sim:</p>
+<p>Click on &quot;Launch&quot; next to Isaac Sim.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="72-verify-installation">7.2. Verify Installation<a href="#72-verify-installation" class="hash-link" aria-label="Direct link to 7.2. Verify Installation" title="Direct link to 7.2. Verify Installation">​</a></h3>
+<p>Initial Setup:</p>
+<p>Upon first launch, Isaac Sim may perform initial setup tasks.
+Follow any on-screen instructions to complete the setup.
+Run a Sample Simulation:</p>
+<p>Isaac Sim includes sample environments and robots.
+Open a sample scene to ensure everything is functioning correctly.
+Check GPU Utilization:</p>
+<p>Open Task Manager and verify that your NVIDIA GPU is being utilized by Isaac Sim.
+Test Basic Functionality:</p>
+<p>Interact with objects in the simulation to confirm responsiveness.
+Run simple scripts or control robots to ensure end-to-end functionality.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="8-optional-update-isaac-sim">8. (Optional) Update Isaac Sim<a href="#8-optional-update-isaac-sim" class="hash-link" aria-label="Direct link to 8. (Optional) Update Isaac Sim" title="Direct link to 8. (Optional) Update Isaac Sim">​</a></h3>
+<p>To keep Isaac Sim up-to-date with the latest features and bug fixes:</p>
+<p>Open Omniverse Launcher.</p>
+<p>Navigate to the Installed Tab:</p>
+<p>Find Isaac Sim in the list.
+Check for Updates:</p>
+<p>If an update is available, an &quot;Update&quot; button will appear.
+Click &quot;Update&quot; and follow the prompts to install the latest version.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-troubleshooting">9. Troubleshooting<a href="#9-troubleshooting" class="hash-link" aria-label="Direct link to 9. Troubleshooting" title="Direct link to 9. Troubleshooting">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="91-common-installation-issues">9.1. Common Installation Issues<a href="#91-common-installation-issues" class="hash-link" aria-label="Direct link to 9.1. Common Installation Issues" title="Direct link to 9.1. Common Installation Issues">​</a></h3>
+<p>Installation Fails or Hangs:</p>
+<p>Check Internet Connection: Ensure a stable connection.
+Antivirus/Firewall: Temporarily disable them as they might block downloads.
+Run as Administrator: Right-click the Omniverse Launcher and select &quot;Run as administrator&quot;.
+Isaac Sim Won&#x27;t Launch:</p>
+<p>Verify GPU Drivers: Ensure they are up to date.
+Check System Requirements: Confirm your system meets the minimum requirements.
+Reinstall Isaac Sim: Uninstall and reinstall via the Omniverse Launcher.
+Performance Issues:</p>
+<p>Close Unnecessary Applications: Free up system resources.
+Adjust Graphics Settings: Lower some settings within Isaac Sim for better performance.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="92-review-logs">9.2. Review Logs<a href="#92-review-logs" class="hash-link" aria-label="Direct link to 9.2. Review Logs" title="Direct link to 9.2. Review Logs">​</a></h3>
+<p>Access Logs:</p>
+<p>Navigate to the Omniverse installation directory.
+Look for log files in C:\Program Files\NVIDIA Corporation\Omniverse\launcher\logs.
+Analyze Logs:</p>
+<p>Open log files with a text editor to identify errors or warnings.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="93-seek-help">9.3. Seek Help<a href="#93-seek-help" class="hash-link" aria-label="Direct link to 9.3. Seek Help" title="Direct link to 9.3. Seek Help">​</a></h3>
+<p>NVIDIA Omniverse Forums:</p>
+<p>Visit the Omniverse Forums for community support.
+GitHub Issues:</p>
+<p>Check the Isaac Sim GitHub Repository for reported issues and solutions.
+Contact Support:</p>
+<p>Reach out to NVIDIA support if you encounter unresolved issues.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="10-additional-resources">10. Additional Resources<a href="#10-additional-resources" class="hash-link" aria-label="Direct link to 10. Additional Resources" title="Direct link to 10. Additional Resources">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="101-official-documentation">10.1. Official Documentation<a href="#101-official-documentation" class="hash-link" aria-label="Direct link to 10.1. Official Documentation" title="Direct link to 10.1. Official Documentation">​</a></h3>
+<p>Isaac Sim Documentation:</p>
+<p>NVIDIA Isaac Sim Documentation
+Omniverse Documentation:</p>
+<p>NVIDIA Omniverse Documentation</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="102-tutorials-and-learning-materials">10.2. Tutorials and Learning Materials<a href="#102-tutorials-and-learning-materials" class="hash-link" aria-label="Direct link to 10.2. Tutorials and Learning Materials" title="Direct link to 10.2. Tutorials and Learning Materials">​</a></h3>
+<p>NVIDIA Developer Zone:</p>
+<p>Isaac Sim Tutorials
+YouTube Channels:</p>
+<p>NVIDIA&#x27;s official channels often have video tutorials and walkthroughs.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="103-community-and-support">10.3. Community and Support<a href="#103-community-and-support" class="hash-link" aria-label="Direct link to 10.3. Community and Support" title="Direct link to 10.3. Community and Support">​</a></h3>
+<p>NVIDIA Developer Forums:</p>
+<p>Engage with other developers and NVIDIA engineers for support.
+GitHub Repositories:</p>
+<p>Explore open-source projects and contribute to the Isaac Sim ecosystem.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/eRob_developer/Nvidia-Isaac-sim.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/category/erob-developer"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">eRob developer</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/eRob_developer/ROS2-moveIt"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MoveIt2</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#2-prerequisites-installation" class="table-of-contents__link toc-highlight">2. Prerequisites Installation</a><ul><li><a href="#21-update-nvidia-gpu-drivers" class="table-of-contents__link toc-highlight">2.1. Update NVIDIA GPU Drivers</a></li><li><a href="#22-install-python" class="table-of-contents__link toc-highlight">2.2. Install Python</a></li></ul></li><li><a href="#3-create-an-nvidia-omniverse-account" class="table-of-contents__link toc-highlight">3. Create an NVIDIA Omniverse Account</a></li><li><a href="#4-install-nvidia-omniverse-launcher" class="table-of-contents__link toc-highlight">4. Install NVIDIA Omniverse Launcher</a><ul><li><a href="#41-download-omniverse-launcher" class="table-of-contents__link toc-highlight">4.1. Download Omniverse Launcher</a></li><li><a href="#42-install-omniverse-launcher" class="table-of-contents__link toc-highlight">4.2. Install Omniverse Launcher</a></li></ul></li><li><a href="#5-install-isaac-sim-via-omniverse-launcher" class="table-of-contents__link toc-highlight">5. Install Isaac Sim via Omniverse Launcher</a><ul><li><a href="#51-navigate-to-isaac-sim" class="table-of-contents__link toc-highlight">5.1. Navigate to Isaac Sim</a></li><li><a href="#52-install-isaac-sim" class="table-of-contents__link toc-highlight">5.2. Install Isaac Sim</a></li></ul></li><li><a href="#6-configure-environment-variables-if-necessary" class="table-of-contents__link toc-highlight">6. Configure Environment Variables (If Necessary)</a></li><li><a href="#7-launch-and-verify-isaac-sim" class="table-of-contents__link toc-highlight">7. Launch and Verify Isaac Sim</a><ul><li><a href="#71-launch-isaac-sim" class="table-of-contents__link toc-highlight">7.1. Launch Isaac Sim</a></li><li><a href="#72-verify-installation" class="table-of-contents__link toc-highlight">7.2. Verify Installation</a></li><li><a href="#8-optional-update-isaac-sim" class="table-of-contents__link toc-highlight">8. (Optional) Update Isaac Sim</a></li></ul></li><li><a href="#9-troubleshooting" class="table-of-contents__link toc-highlight">9. Troubleshooting</a><ul><li><a href="#91-common-installation-issues" class="table-of-contents__link toc-highlight">9.1. Common Installation Issues</a></li><li><a href="#92-review-logs" class="table-of-contents__link toc-highlight">9.2. Review Logs</a></li><li><a href="#93-seek-help" class="table-of-contents__link toc-highlight">9.3. Seek Help</a></li></ul></li><li><a href="#10-additional-resources" class="table-of-contents__link toc-highlight">10. Additional Resources</a><ul><li><a href="#101-official-documentation" class="table-of-contents__link toc-highlight">10.1. Official Documentation</a></li><li><a href="#102-tutorials-and-learning-materials" class="table-of-contents__link toc-highlight">10.2. Tutorials and Learning Materials</a></li><li><a href="#103-community-and-support" class="table-of-contents__link toc-highlight">10.3. Community and Support</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
