@@ -4,7 +4,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 # Entrance
 
-This is the entry to the [link](https://wdb-123.github.io/) project website.
+This is the entry to the [link](https://wdb-123.github.io/) of project website.
 
 ### Installation
 
