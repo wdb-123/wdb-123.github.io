@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Entrance
+# Entrance
 
 This is the entry to the [link](https://wdb-123.github.io/) project website.
 
